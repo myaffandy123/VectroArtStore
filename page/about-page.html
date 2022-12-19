@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" href="../img/logo.png">
+    <!-- font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <script src="../js/script.js"></script>
+    <header class="header">
+        <div class="title">
+            VectroArtStore
+        </div>
+        <div class="header-center-nav">
+            <div class="top-nav" onclick="location.href = '../index.html'">Home</div>
+            <div class="vertical-bar">|</div>
+            <div class="top-nav" onclick="location.href = '../page/faq-page.html'">FAQ</div>
+            <div class="vertical-bar">|</div>
+            <div class="top-nav current" onclick="location.href = '../page/about-page.html'">About</div>
+        </div>
+        <!-- <a class="button" href="page/login-page.html">
+            Login
+        </a> -->
+        <button class='button' id="login" onclick="viewLogin()">Login</button>
+    </header>
+    <main>
+        <div id="overlay" onclick="hideAll()"></div>
+
+        <div id="login-window">
+            <div class="window-head">
+                <button class="back">
+                    <img src="../img/arrow.png" onclick="hideLogin()" alt="">
+                </button>
+                <p>Log Into your Account</p>
+                <div style="padding: 10px;"></div>
+            </div>
+            <div class="window-body">
+                <input type="text" class="input" placeholder="Username">
+                <input type="password" class="input" placeholder="Password">
+                <div style="display: flex; margin: 0px 100px 50px 0;">
+                    <input type="checkbox" style="cursor: pointer;">
+                    <div style="font-size: 14px; padding-left: 15px;">Remember me</div>
+                </div>
+                <button class="button signin" id="normal" onclick="location.href = '../page/home-login-page.html';">Log In</button>
+                <button class="button signin" id="with-google">Log In with Google</button>
+                <div style="display: flex; font-size: 14px; align-items: center;">
+                    Don't have an account?
+                    <button class="button signup" onclick="viewSignup()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="signup-window">
+            <div class="window-head">
+                <button class="back">
+                    <img src="../img/arrow.png" onclick="hideSignup()" alt="">
+                </button>
+                <p>Create your Account</p>
+                <div style="padding: 10px;"></div>
+            </div>
+            <div class="window-body">
+                <input type="text" class="input" placeholder="Username">
+                <input type="text" class="input" placeholder="Email">
+                <input type="text" class="input" placeholder="Tempat, Tanggal Lahir">
+                <input type="text" class="input" placeholder="Alamat">
+                <input type="password" class="input" placeholder="Password">
+                <div style="display: flex; margin: 0px 4px 50px 0;">
+                    <input type="checkbox" style="cursor: pointer;">
+                    <div style="font-size: 14px; padding-left: 10px; word-wrap: break-word;">
+                        By signing up you agree to the terms of service and privacy policy
+                    </div>
+                </div>
+                <button class="button signin" id="normal">Sign Up</button>
+                <button class="button signin" id="with-google">Sign Up with Google</button>
+                <div style="display: flex; font-size: 14px; align-items: center;">
+                    Already have account?
+                    <button class="button signup" onclick="viewLoginBack()">Log In</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-up" style="background-image: url(../img/banner.jpg);">
+            <div class="title">
+                About Us
+            </div>
+        </div>
+        <div class="about-container">
+            VectroArtStore adalah tempat berjualan jasa gambar vektor. Di sini kalian bisa membeli jasa untuk sebuah karya vektor sesuai keinginan kalian. 
+            Di sini pula kalian bisa berjualan karya vektor kalian sendiri dengan menerima pesanan dari pembeli jasa.
+            Berbagai fitur yang memudahkan akan kalian dalam melakukan pembelian atau penjualan kalian. Website ini
+            dibangun pada tahun 2022.
+        </div>
+        <div class="about-container">
+            <div class="box-title">Developed By</div>
+            <div class="about-container-bot">
+                <div class="about-container-pic">
+                    <img src="../img/about nabila.png" alt="">
+                    Nabila Nur Fajri Adhia<br>
+                    215150200111044
+                </div>
+                <div class="about-container-pic">
+                    <img src="../img/about yusuf.jpg" alt="">
+                    Muhammad Yusuf Affandy<br>
+                    215150200111052
+                </div>
+                <div class="about-container-pic">
+                    <img src="../img/about azzam.png" alt="">
+                    Nabillah Azzam Luthfi Mahfudzi<br>
+                    215150200111064
+                </div>
+            </div>
+        </div>
+        <div style="height: 100px;"></div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="about-us">About Us</div>
+            <div class="sosmed-logo">
+                <img src="../img/youtube logo.png" alt="">
+                <img src="../img/instagram logo.png" alt="">
+                <img src="../img/twiter logo.png" alt="">
+                <img src="../img/facebook logo.png" alt="">
+            </div>
+            Copyright ©2022 VectroArtStore Corp.
+        </div>
+    </footer>
+</body>
+</html>
